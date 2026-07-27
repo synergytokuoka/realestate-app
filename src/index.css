@@ -185,3 +185,83 @@ a {
   font-size: 14px;
   opacity: 0.8;
 }
+
+.property-layout {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.property-card-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.new-property-button {
+  margin-bottom: 24px;
+}
+
+.empty-text {
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/* 物件登録・編集フォーム */
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.property-form label {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.property-form input {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.secondary-button,
+.danger-button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.secondary-button:hover:not(:disabled) {
+  background: var(--border);
+}
+
+.danger-button {
+  color: var(--error);
+  border-color: var(--error);
+}
+
+.danger-button:hover:not(:disabled) {
+  background: var(--error);
+  color: #fff;
+}
